@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom_progress="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.yushuaiguang1506d20170904.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/setcolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="改变颜色" />
+
+        <Button
+            android:id="@+id/jiasu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="加速" />
+
+        <Button
+            android:id="@+id/jiansu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="减速" />
+    </LinearLayout>
+
+    <com.bwie.yushuaiguang1506d20170904.RoundProgressBar
+        android:id="@+id/roundProgressBar_02"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        custom_progress:roundProgressColor="@android:color/white"
+        custom_progress:roundWidth="1dip"
+        custom_progress:style="PROGRESS"
+        custom_progress:textColor="#FFFFFF"
+        custom_progress:textIsDisplayable="true"
+        custom_progress:textSize="12sp" />
+
+</RelativeLayout>
